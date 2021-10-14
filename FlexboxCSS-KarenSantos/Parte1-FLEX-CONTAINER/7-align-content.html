@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Align Items</title>
+</head>
+<style>
+  .container {
+    height: 350px;
+    max-width: 300px;
+    border: 1px solid black;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .item {
+    background-color: blueviolet;
+    padding: 0 5px;
+    margin: 5px;
+    color: white;
+    text-align: center; 
+    flex: 1;
+  }
+  .stretch {
+    align-content: stretch;
+  }
+  .center {
+    align-content: center;
+  }
+  .flex-start {
+    align-content: flex-start;
+  }
+  .flex-end {
+    align-content: flex-end;
+  }
+  .space-between {
+    align-content: space-between;
+  }
+  .space-around {
+    align-content: space-around;
+  }
+  
+</style>
+
+<body>
+  <h3>align-content: stretch</h3>
+  <section class="container stretch">
+    <div class="item">Item 1 é o menor</div>
+    <div class="item">Aqui está o Item 2 pra vc</div>
+    <div class="item">Item 1 é o menor</div>
+    <div class="item">Item 3 colocando mais texto para teste</div>
+    <div class="item">Item 3 colocando mais texto para teste</div>
+    <div class="item">Item 1 é o menor</div>
+    <div class="item">Item 1 é o menor</div>
+    <div class="item">Item 1 é o menor</div>
+    <div class="item">Item 3 colocando mais texto para teste</div>
+    <div class="item">Item 1 é o menor</div>
+    <div class="item">Item 1 é o menor</div>
+    <div class="item">Item 1 é o menor</div>
+    <div class="item">Item 3 colocando mais texto para teste</div>
+
+  </section>
+
+  <h3>align-content: center</h3>
+  <section class="container center">
+    <div class="item">Item 1 é o menor</div>
+    <div class="item">Aqui está o Item 2 pra vc</div>
+    <div class="item">Item 1 é o menor</div>
+    <div class="item">Item 3 colocando mais texto para teste</div>
+    <div class="item">Item 3 colocando mais texto para teste</div>
+    <div class="item">Item 1 é o menor</div>
+    <div class="item">Item 1 é o menor</div>
+  </section>
+  
+  <h3>align-content: flex-start</h3>
+  <section class="container flex-start">
+    <div class="item">Item 1 é o menor</div>
+    <div class="item">Aqui está o Item 2 pra vc</div>
+    <div class="item">Item 1 é o menor</div>
+    <div class="item">Item 3 colocando mais texto para teste</div>
+    <div class="item">Item 3 colocando mais texto para teste</div>
+    <div class="item">Item 1 é o menor</div>
+    <div class="item">Item 1 é o menor</div>
+  </section>
+
+  <h3>align-content: flex-end</h3>
+  <section class="container flex-end">
+    <div class="item">Item 1 é o menor</div>
+    <div class="item">Aqui está o Item 2 pra vc</div>
+    <div class="item">Item 1 é o menor</div>
+    <div class="item">Item 3 colocando mais texto para teste</div>
+    <div class="item">Item 3 colocando mais texto para teste</div>
+    <div class="item">Item 1 é o menor</div>
+    <div class="item">Item 1 é o menor</div>
+  </section>
+
+  <h3>align-content: space-around</h3>
+  <section class="container space-around">
+    <div class="item">Item 1 é o menor</div>
+    <div class="item">Aqui está o Item 2 pra vc</div>
+    <div class="item">Item 1 é o menor</div>
+    <div class="item">Item 3 colocando mais texto para teste</div>
+    <div class="item">Item 3 colocando mais texto para teste</div>
+    <div class="item">Item 1 é o menor</div>
+    <div class="item">Item 1 é o menor</div>
+  </section>
+
+  <h3>align-content: space-between</h3>
+  <section class="container space-between">
+    <div class="item">Item 1 é o menor</div>
+    <div class="item">Aqui está o Item 2 pra vc</div>
+    <div class="item">Item 1 é o menor</div>
+    <div class="item">Item 3 colocando mais texto para teste</div>
+    <div class="item">Item 3 colocando mais texto para teste</div>
+    <div class="item">Item 1 é o menor</div>
+    <div class="item">Item 1 é o menor</div>
+  </section>
+
+</body>
+</html>

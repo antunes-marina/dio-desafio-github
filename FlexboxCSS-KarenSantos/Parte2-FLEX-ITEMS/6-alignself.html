@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Align Self</title>
+  <style>
+    .flex-container{
+      display: flex;
+      border: 2px solid black;
+      max-width: 350px;
+      margin-bottom: 20px;
+    }
+    .item {
+      flex: 1;
+      background-color: blue;
+      margin: 5px;
+      padding: 5px;
+      text-align: center;
+      color: white;
+    }
+    .align-container{
+      align-items: center;
+    }
+    .center{
+      align-self: center;
+    }
+    .start{
+      align-self: start;
+    }
+    .end{
+      align-self: end;
+    }
+    .baseline{
+      align-self: baseline;
+    }
+    .stretch{
+      align-self: stretch;
+    }
+    .auto{
+      align-self: auto;
+    }
+    .direction{
+      flex-direction: column;
+    }
+  </style>
+</head>
+<body>
+  <h2>ROW</h2>
+  <p>align-self: auto</p>
+  <div class="flex-container">
+    <div class="item auto">AAA</div>
+    <div class="item auto">B</div>
+    <div class="item auto">C hueaheuah hauehahea</div>
+    <div class="item auto">D</div>
+  </div>
+
+  <p>align-self: auto e Container com align-items: center</p>
+  <div class="flex-container align-container">
+    <div class="item auto">AAA</div>
+    <div class="item auto">B</div>
+    <div class="item auto">C hueaheuah hauehahea</div>
+    <div class="item auto">D</div>
+  </div>
+
+  <p>A center, B start, C stretch, D end</p>
+  <div class="flex-container">
+    <div class="item center">AAA</div>
+    <div class="item start">B</div>
+    <div class="item stretch">C ehuahahahaheua</div>
+    <div class="item end">D</div>
+  </div>
+
+
+  <h2>COLUMN</h2>
+  <p>align-self: auto</p>
+  <div class="flex-container direction">
+    <div class="item auto">AAA</div>
+    <div class="item auto">B</div>
+    <div class="item auto">C hueaheuah hauehahea</div>
+    <div class="item auto">D</div>
+  </div>
+
+  <p>align-self: auto e Container com align-items: center</p>
+  <div class="flex-container align-container direction">
+    <div class="item auto">AAA</div>
+    <div class="item auto">B</div>
+    <div class="item auto">C hueaheuah hauehahea</div>
+    <div class="item auto">D</div>
+  </div>
+
+  <p>A center, B start, C stretch, D end</p>
+  <div class="flex-container direction">
+    <div class="item center">AAA</div>
+    <div class="item start">B</div>
+    <div class="item stretch">C ehuahahahaheua</div>
+    <div class="item end">D</div>
+  </div>
+  
+  
+</body>
+</html>

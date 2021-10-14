@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flex</title>
+  <style>
+    .flex-container{
+      display: flex;
+      border: 2px solid black;
+      max-width: 400px;
+    }
+    .item {
+      background-color: brown;
+      margin: 5px;
+      padding: 5px;
+      text-align: center;
+      color: white;
+    }
+    
+    .flex-1 {
+      flex: 1;
+    }
+    .flex-2 {
+      flex: 2;
+    }
+    .largura-200{
+      /* width: 200px; */
+      min-width: 200px;
+    }
+  
+  </style>
+</head>
+<body>
+  <p>sem css</p>
+  <div class="flex-container">
+    <div class="item">AAA</div>
+    <div class="item">B</div>
+    <div class="item">C</div>
+    <div class="item">D</div>
+  </div>
+
+  <p>flex:1 => grow:1, shrink:1, basis:0</p>
+  <div class="flex-container">
+    <div class="item flex-1">AAA</div>
+    <div class="item flex-1">B</div>
+    <div class="item flex-1">C</div>
+    <div class="item flex-1">D</div>
+  </div>
+
+  <!-- <p>B e C com flex:2 => grow:2, shrink:1, basis:0</p>
+  <div class="flex-container">
+    <div class="item flex-1">AAA</div>
+    <div class="item flex-2">B</div>
+    <div class="item flex-2">C</div>
+    <div class="item flex-1">D</div>
+  </div> -->
+
+  <p>flex:1 => grow:1, shrink:1, basis:0<br>
+  com min-width: 200px </p>
+  <div class="flex-container">
+    <div class="item flex-1 largura-200">AAA</div>
+    <div class="item flex-1 largura-200">B</div>
+    <div class="item flex-1 largura-200">C</div>
+    <div class="item flex-1 largura-200">D</div>
+  </div>
+  
+</body>
+</html>

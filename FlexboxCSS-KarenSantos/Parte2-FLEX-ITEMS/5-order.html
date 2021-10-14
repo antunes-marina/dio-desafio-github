@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Order</title>
+  <style>
+    .flex-container{
+      display: flex;
+      border: 2px solid black;
+      max-width: 350px;
+      margin-bottom: 20px;
+    }
+    .item {
+      flex: 1;
+      background-color: blue;
+      margin: 5px;
+      padding: 5px;
+      text-align: center;
+      color: white;
+    }
+    
+   .order-1{
+     order: 1;
+   }
+
+   .order-2{
+     order: 2;
+   }
+   .order-3{
+     order: 3;
+   }
+   .order-neg{
+     order: -1;
+   }
+   .order-mneg{
+     order: -2;
+   }
+  </style>
+</head>
+<body>
+  <p>order: 0</p>
+  <div class="flex-container">
+    <div class="item">AAA</div>
+    <div class="item">B</div>
+    <div class="item">C</div>
+    <div class="item">D</div>
+  </div>
+
+  <h3>Mudando a ordem dos elementos:</h3>
+  <p>B, D order:1, C order:2, A order:3</p>
+  <div class="flex-container">
+    <div class="item order-3">AAA</div>
+    <div class="item order-1">B</div>
+    <div class="item order-2">C</div>
+    <div class="item order-1">D</div>
+  </div>
+
+  <p>A order:-2, D order: -1, B order:1, C order:2</p>
+  <div class="flex-container">
+    <div class="item order-mneg">AAA</div>
+    <div class="item order-1">B</div>
+    <div class="item order-2">C</div>
+    <div class="item order-neg">D</div>
+  </div>
+  
+  
+</body>
+</html>
