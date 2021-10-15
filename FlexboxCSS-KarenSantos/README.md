@@ -8,4 +8,7 @@
   
 #### - Pasta "Parte2-FLEX-ITEMS": 
   1) arquivos .html criados por mim durante as aulas
-  2) anotações (arquivo .odt e .pdf) contendo observações minhas e prints da tela para explicar melhor o conteúdo estudadO 
+  2) anotações (arquivo .odt e .pdf) contendo observações minhas e prints da tela para explicar melhor o conteúdo estudado
+
+#### - Pasta "flex-projeto": 
+  1) contém o projeto completo iniciado pela instrutora e com alguns detalhes de formatação feitos por mim
