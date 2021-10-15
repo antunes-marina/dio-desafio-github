@@ -11,4 +11,5 @@
   2) anotações (arquivo .odt e .pdf) contendo observações minhas e prints da tela para explicar melhor o conteúdo estudado
 
 #### - Pasta "flex-projeto": 
-  1) contém o projeto completo iniciado pela instrutora e com alguns detalhes de formatação feitos por mim
+  1) contém o projeto completo iniciado pela instrutora com alguns detalhes de formatação alterados por mim
+  2) contém também anotações (arquivo .odt e .pdf) com pequenas observações sobre detalhes que não conhecia sobre CSS.
